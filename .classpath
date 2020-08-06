@@ -6,8 +6,17 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="C:/Users/wesll/Desktop/poi-4.1.2/poi-4.1.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/wesll/Downloads/jsoup-1.13.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/wesll/Desktop/commons-math3-3.6.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/wesll/Documents/bibliotecas Java/commons-math3-3.6.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/wesll/Documents/bibliotecas Java/jsoup-1.13.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/wesll/Documents/bibliotecas Java/poi-4.1.2/poi-4.1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/wesll/Downloads/selenium-server-standalone-3.141.59.jar"/>
+	<classpathentry kind="lib" path="C:/Users/wesll/Downloads/jar_files.zip"/>
+	<classpathentry kind="lib" path="C:/Users/wesll/Documents/bibliotecas Java/selenium-server-3.9.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/wesll/Documents/bibliotecas Java/selenium-server-3.9.1.zip"/>
+	<classpathentry kind="lib" path="C:/Users/wesll/Documents/bibliotecas Java/poi-4.1.2/poi-examples-4.1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/wesll/Documents/bibliotecas Java/poi-4.1.2/poi-excelant-4.1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/wesll/Documents/bibliotecas Java/poi-4.1.2/poi-ooxml-4.1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/wesll/Documents/bibliotecas Java/poi-4.1.2/poi-ooxml-schemas-4.1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/wesll/Documents/bibliotecas Java/poi-4.1.2/poi-scratchpad-4.1.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

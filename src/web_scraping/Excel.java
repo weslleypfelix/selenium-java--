@@ -1,39 +1,42 @@
 package web_scraping;
 
 import java.io.FileOutputStream;
+import java.util.List;
 
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
-import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
+import org.openqa.selenium.WebElement;
 
 public class Excel {
 
-		public static void Excel2( Elements descricao,  Elements Valor) {
+		public static void Excel2( List <WebElement> descricao,  List <WebElement> Valor) {
 			
 			Workbook workbook = new HSSFWorkbook();
 			
 			
-			Sheet sheet = workbook.createSheet("Product");
-			Sheet sheet2 = workbook.createSheet("Prices");
+			Sheet sheet = workbook.createSheet("Product and prices");
+			
 		
 			int i = 0;
-			for(	Element x	: descricao	) {
+			for(	WebElement x	: descricao	) {
 				
 				Cell cell2 = sheet.createRow(i).createCell(0);
-				cell2.setCellValue(x.getElementsByTag("a").first().text());
+				cell2.setCellValue(x.getText());
 				sheet.autoSizeColumn(0);
 				i++;
 				
 			}
 			
+			/*Thhere is a lot of products that is actually without pricetag... 
+			 * 
+			 * */
+			
 			int a = 0;
-			for(	Element y	: Valor	) {
-				Cell cell3 = sheet2.createRow(a).createCell(0); 
-				cell3.setCellValue(y.getElementsByTag("span").first().text());
+			for(	WebElement y	: Valor	) {
+				Cell cell3 = sheet.getRow(a).createCell(1); 
+				cell3.setCellValue(y.getText());
 				sheet.autoSizeColumn(0);
 				a++;
 			}
@@ -49,6 +52,8 @@ public class Excel {
 			}
 			
 		}
+
+
 	
 	
 }
